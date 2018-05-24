@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_easy">EasyActivity</string>
+    <string-array name="difficulty_array">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+    <string name="title_activity_hard">HardActivity</string>
+    <string name="title_activity_medium">MediumActivity</string>
+</resources>

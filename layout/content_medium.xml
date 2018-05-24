@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ak.myapplication.MediumActivity"
+    tools:showIn="@layout/activity_medium">
+
+    <TextView
+        android:id="@+id/moves_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="Moves : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/matches_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Matches Remaining : "
+        app:layout_constraintStart_toEndOf="@+id/moves_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/difficulty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="26dp"
+        android:text="Difficulty : Medium"
+        app:layout_constraintStart_toEndOf="@+id/matches_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt0"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="62dp"
+        android:onClick="cardFlipped"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moves_text" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="62dp"
+        android:onClick="cardFlipped"
+        app:layout_constraintStart_toEndOf="@+id/bt0"
+        app:layout_constraintTop_toBottomOf="@+id/matches_text" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="62dp"
+        android:onClick="cardFlipped"
+        app:layout_constraintStart_toEndOf="@+id/bt1"
+        app:layout_constraintTop_toBottomOf="@+id/difficulty_text" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="34dp"
+        android:onClick="cardFlipped"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt0" />
+
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="34dp"
+        android:onClick="cardFlipped"
+        app:layout_constraintStart_toEndOf="@+id/bt3"
+        app:layout_constraintTop_toBottomOf="@+id/bt1" />
+
+    <Button
+        android:id="@+id/bt5"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="34dp"
+        android:onClick="cardFlipped"
+        app:layout_constraintStart_toEndOf="@+id/bt4"
+        app:layout_constraintTop_toBottomOf="@+id/bt2" />
+
+    <Button
+        android:id="@+id/bt6"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="24dp"
+        android:onClick="cardFlipped"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt3" />
+
+    <Button
+        android:id="@+id/bt7"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="24dp"
+        android:onClick="cardFlipped"
+        app:layout_constraintStart_toEndOf="@+id/bt6"
+        app:layout_constraintTop_toBottomOf="@+id/bt4" />
+
+    <Button
+        android:id="@+id/bt8"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:onClick="cardFlipped"
+        app:layout_constraintStart_toEndOf="@+id/bt7"
+        app:layout_constraintTop_toBottomOf="@+id/bt5" />
+
+    <Button
+        android:id="@+id/bt9"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="27dp"
+        android:onClick="cardFlipped"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt6" />
+
+    <Button
+        android:id="@+id/bt10"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="27dp"
+        android:onClick="cardFlipped"
+        app:layout_constraintStart_toEndOf="@+id/bt9"
+        app:layout_constraintTop_toBottomOf="@+id/bt7" />
+
+    <Button
+        android:id="@+id/bt11"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="27dp"
+        android:onClick="cardFlipped"
+        app:layout_constraintStart_toEndOf="@+id/bt10"
+        app:layout_constraintTop_toBottomOf="@+id/bt8" />
+</android.support.constraint.ConstraintLayout>
